@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.box {
+    width: 640px;
+    height: 400px;
+    position: relative;
+}
+
+.box .list {
+    width: 640px;
+    height: 400px;
+    position: relative;
+}
+
+.box .list li {
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    /* 核心代码 通过改变透明度实现淡入淡出轮播效果，起始所以图片为全透明 */
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.box .list li img {
+    width: 640px;
+    height: 400px;
+}
+
+/* 核心代码 当移动容器下的li添加on属性时，变成显示状态 */
+.box .list li.on {
+    opacity: 1;
+}
+
+.box .btn {
+    display: block;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.box .prev {
+    left: 0;
+}
+
+.box .next {
+    right: 0;
+}
+
+.box .btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.box .page {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    text-align: center;
+}
+
+.box .page li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.box .page .on {
+    background-color: #0aa1ed;
+}
