@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.display-none {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+    padding: 1em .5em 1em .5em;
+    position: relative;
+}
+
+.navbar-inner {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-inner .nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-inner .logo {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-inner .menu {
+    margin-left: 30px;
+}
+
+.navbar-inner .menu ul {
+    list-style: none;
+}
+
+.navbar-inner .menu > ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar-inner .menu > ul li a:link, .navbar-inner .menu > ul li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-menu {
+    background-color: #343a40;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.mobile-menu-inner ul {
+    list-style: none;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.mobile-menu-inner ul li {
+    margin-bottom: 20px;
+}
+
+.mobile-nav-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu-inner ul li a:link, .mobile-menu-inner ul li a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 769px) {
+    .menu {
+        display: none;
+    }
+    .mobile-nav-btn {
+        display: block !important;
+    }
+}
+
+.home-main > .product {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    justify-content: center;
+}
+
+.home-main > .product > .thumb {
+    width: 300px;
+    margin-right: 10px;
+
+}
+
+.home-main > .product > .thumb > img {
+    width: 300px;
+}
+
+.home-main > .product > .content {
+    flex: 1;
+}
+
+.home-main > .product > .content > .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logos {
+    padding: 1em;
+}
+
+.logos > .title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logos > .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.forms {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.forms > .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.forms > .contact .input-text {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.forms > .contact .input-text input {
+    width: 300px !important;
+}
+
+.forms > .sitemap {
+    margin-bottom: 20px;
+}
+
+.forms > .game {
+    margin-bottom: 20px;
+}
+
+.login {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.login-inner {
+    width: 400px;
+    background-color: white;
+    height:300px;
+    border-radius: 6px;
+    padding: 2em;
+}
+
+.login-inner > .form-item {
+    margin-bottom: 20px;
+}
+
+.login-inner > .form-item > .label {
+    margin-bottom: 10px;
+}
+
+.login-inner > .form-item > .compent > input {
+    width: 100%;
+    height: 30px;
+}
+
+.login-inner > .form-item > button {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    color: white;
+    background-color: #0aa1ed;
+    margin-top: 20px;
+}
+
+
